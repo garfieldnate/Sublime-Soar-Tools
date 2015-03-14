@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[##!
+# @file $TM_FILENAME
+# @brief ${1:brief description}
+#
+# ${2:longer html description}
+#
+# @project ${3:Project Name}
+#
+# @created ${4:$TM_FULLNAME} ${5:date}
+]]></content>
+    <tabTrigger>##!</tabTrigger>
+    <scope>source.soar</scope>
+    <description>Soar file documentation</description>
+</snippet>

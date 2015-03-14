@@ -1,0 +1,116 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+name: Soar
+scopeName: source.soar
+fileTypes: [soar]
+uuid: f4b14934-e34e-4a57-80b0-576e298cb1e7
+
+patterns:
+- comment: production container
+  name: keyword.operator.soar
+  begin: ([sg]p)\s+{([A-z0-9][A-z0-9*=$%?_/@:&><-]*)
+  beginCaptures:
+    '1': {name: support.function.soar}
+    '2': {name: variable.parameter.soar}
+  end: \}
+  patterns:
+  - include: '#production'
+
+- comment: other braced containers, like smem --add {}
+  name: keyword.operator.soar
+  begin: \{
+  end: \}
+  patterns:
+  - include: '#production'
+
+- comment: other functions
+  match: ^(add-wme|alias|allocate|capture-input|cd|chunk-name-format|cli|clog|command-to-file|default-wme-depth|dirs|echo-commands|echo|edit-production|epmem|excise|explain-backtraces|firing-counts|gds-print|gp-max|help|indifferent-selection|init-soar|internal-symbols|learn|load-library|ls|matches|max-chunks|max-dc-time|max-elaborations|max-goal-depth|max-memory-usage|max-nil-output-cycles|memories|multi-attributes|numeric-indifferent-mode|o-support-mode|pbreak|popd|port|predict|preferences|print|production-find|pushd|pwatch|pwd|rand|remove-wme|replay-input|rete-net|rl|run|save-backtraces|select|set-library-location|set-stop-phase|smem|soarnews|source|srand|stats|stop-soar|svs|timers|time|unalias|verbose|version|waitsnc|warnings|watch-wmes|watch|wma)([^{]*)
+  captures:
+    '1': {name: support.function.soar}
+    '2': {name: variable.parameter.soar}
+
+- comment: default aliases
+  match: ^(a|aw|chdir|ctf|set-default-depth|ex|eb|fc|gds_print|h|man|\?|inds|init|is|l|dir|pr|p|pc|wmes|varprint|topd|pw|step|d|e|rw|rn|sn|st|stop|ss|interrupt|un|w)([^{]*)
+  captures:
+    '1': {name: support.function.soar}
+    '2': {name: variable.parameter.soar}
+
+- include: '#comment'
+
+repository:
+  production:
+    patterns:
+    - comment: docstring
+      name: string.quoted.double.soar
+      begin: '"'
+      end: '"'
+      patterns:
+      - include: '#escaped-character'
+    - comment: quoted strings
+      name: string.quoted.other.soar
+      begin: \|
+      end: \|
+      patterns:
+      - include: '#escaped-character'
+    - comment: standard and scientific floats
+      name: constant.numeric.soar
+      match: '[+-]?[0-9]\.[0-9]+[eE][-+]?[0-9]+[dDfF]?|[+-]?[0-9]*\.[0-9]*[dDfF]?'
+    - comment: integers
+      name: constant.numeric.soar
+      match: -?[0-9]+
+    - comment: flags
+      name: support.type.soar
+      match: :(?:o-support|i-support|chunk|default|interrupt|template)
+    - comment: arrow
+      name: keyword.operator.soar
+      match: -->
+    - comment: math ops
+      name: keyword.operator.soar
+      match: \+-\*/
+    - comment: variables
+      name: variable.parameter.soar
+      match: <[A-Za-z0-9$%&*+/:=?_<>-]+>
+    - comment: attributes
+      name: variable.other.soar
+      match: \^
+    - comment: all braces, prefs, and minus
+      name: keyword.control.soar
+      match: '[()<>.=&+|!~@-]'
+    - comment: curly braces nest conditions; need this to prevent from ending a production
+      begin: \{
+      end: \}
+      patterns:
+      - include: '#production'
+    - comment: condition type
+      name: keyword.operator.soar
+      match: state|impasse
+    - comment: nil
+      name: constant.language.soar
+      match: nil
+    - comment: non-quoted string
+      name: string.unquoted.soar
+      match: '[A-Za-z0-9$%&*+/:=?_><-]+'
+    - include: '#comment'
+
+  comment:
+    comment: end of line comment
+    name: comment.line.number-sign.soar
+    match: (;\s*)?\#.*$
+
+  escaped-character:
+    name: constant.character.escape.soar
+    match: \\.
+
+  int-constant:
+    name: constant.numeric.soar
+    match: -?[0-9]+
+
+  scientific-float-constant:
+    name: constant.numeric.soar
+    match: '[+-]?[0-9]\.[0-9]+[eE][-+]?[0-9]+[dDfF]?'
+
+  standard-float-constant:
+    comment: standard|scientific
+    name: constant.numeric.soar
+    match: '[-+]?[0-9]*\.[0-9]*[dDfF]?'
+foldingStartMarker: \{
+foldingStopMarker: \}

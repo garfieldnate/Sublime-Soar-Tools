@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[##!
+# @operator ${1:operator name}
+# @brief ${2:brief description}
+#
+# ${3:longer html description}
+#
+# @problem-space ${4:name of problem space}
+]]></content>
+    <tabTrigger>##!</tabTrigger>
+    <scope>source.soar</scope>
+    <description>Soar operator documentation</description>
+</snippet>

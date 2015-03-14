@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+sp {${1:state-name}*compare*${2:op1-name}*${3:op2-name}
+   (state <s> ^name ${1:state-name}
+              ^operator <op1> +
+                        <op2> +)
+   (<op1> ^name ${2:op1-name})
+   (<op2> ^name ${3:op2-name})
+-->
+   (<s> ^operator <op1> ${4:>} <op2>)
+}
+]]></content>
+    <tabTrigger>sp</tabTrigger>
+    <scope>source.soar</scope>
+    <description>operator comparison production</description>
+</snippet>

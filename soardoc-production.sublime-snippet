@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[##!
+# @production ${1:name}
+# @brief ${2:brief description}
+#
+# ${3:longer html description}
+#
+# @problem-space ${4:problem space name}
+# @type ${5:state-elaboration}
+#
+# @created ${6:$TM_FULLNAME} ${7:date}
+]]></content>
+    <tabTrigger>##!</tabTrigger>
+    <scope>source.soar</scope>
+    <description>Soar production documentation</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+sp {${1:state-name}*apply*${2:op-name}*${3:detail}
+   (state <s> ^operator <op>)
+   (<op> ^name ${2:op-name})
+-->
+   (<s> ^${4:do-something})
+}
+]]></content>
+    <tabTrigger>sp</tabTrigger>
+    <scope>source.soar</scope>
+    <description>operator application production</description>
+</snippet>

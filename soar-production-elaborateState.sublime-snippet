@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+sp {${1:state-name}*elaborate*state
+   (state <s> ^name ${1:state-name})
+-->
+   (<s> ^${2:do-something})
+}
+]]></content>
+    <tabTrigger>sp</tabTrigger>
+    <scope>source.soar</scope>
+    <description>state elaboration production</description>
+</snippet>
