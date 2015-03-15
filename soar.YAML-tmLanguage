@@ -34,6 +34,8 @@ patterns:
     '1': {name: support.function.soar}
     '2': {name: variable.parameter.soar}
 
+- include: source.soardoc
+
 - include: '#comment'
 
 repository:

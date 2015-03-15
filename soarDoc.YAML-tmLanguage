@@ -1,0 +1,18 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: SoarDoc
+scopeName: source.soardoc
+fileTypes: []
+uuid: 03c6fa04-0244-435f-a37e-22aa0ba890c5
+
+patterns:
+- comment: SoarDoc blocks
+  name: comment.block.number-sign.soardoc
+  begin: '##!'
+  # note that ";#" comments will end the block; not sure if that's
+  # consistent with the SoarDoc tool.
+  end: '^\s*(?![ #])'
+  patterns:
+  - comment: directives like @operator, @brief, etc.
+    name: keyword.operator.soardoc
+    match: '@[^ ]+'

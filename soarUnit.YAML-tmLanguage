@@ -35,9 +35,12 @@ patterns:
   patterns:
   - include: source.soar
 
+- include: source.soardoc
+
 - comment: end-of-line comments
   name: comment.line.number-sign.soar
   match: (;\s*)?\#.*$
+
 
 repository:
   quoted-string:

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array/>
+	<key>name</key>
+	<string>SoarDoc</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>##!</string>
+			<key>comment</key>
+			<string>SoarDoc blocks</string>
+			<key>end</key>
+			<string>^\s*(?![ #])</string>
+			<key>name</key>
+			<string>comment.block.number-sign.soardoc</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>comment</key>
+					<string>directives like @operator, @brief, etc.</string>
+					<key>match</key>
+					<string>@[^ ]+</string>
+					<key>name</key>
+					<string>keyword.operator.soardoc</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.soardoc</string>
+	<key>uuid</key>
+	<string>03c6fa04-0244-435f-a37e-22aa0ba890c5</string>
+</dict>
+</plist>

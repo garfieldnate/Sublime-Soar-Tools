@@ -92,6 +92,10 @@
 			</array>
 		</dict>
 		<dict>
+			<key>include</key>
+			<string>source.soardoc</string>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>end-of-line comments</string>
 			<key>match</key>

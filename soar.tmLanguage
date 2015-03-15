@@ -101,6 +101,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>source.soardoc</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#comment</string>
 		</dict>
 	</array>
