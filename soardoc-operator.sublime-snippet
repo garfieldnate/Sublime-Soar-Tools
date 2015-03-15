@@ -8,6 +8,6 @@
 # @problem-space ${4:name of problem space}
 ]]></content>
     <tabTrigger>##!</tabTrigger>
-    <scope>source.soar</scope>
+    <scope>source.soar,source.soarunit</scope>
     <description>Soar operator documentation</description>
 </snippet>

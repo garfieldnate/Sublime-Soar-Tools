@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+setup {
+  source ${1:../common.soar}
+
+  sp {apply*init*add-state-name
+    (state <s> ^operator.name init)
+  -->
+    (<s> ^name ${2:xyz})
+  }
+}
+]]></content>
+    <tabTrigger>setup</tabTrigger>
+    <scope>source.soarunit</scope>
+    <description>SoarUnit setup block</description>
+</snippet>

@@ -1,0 +1,50 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+
+name: SoarUnit
+scopeName: source.soarunit
+fileTypes: [soarunit]
+uuid: aea98b91-6d27-4092-a4b2-9969e89af5f8
+
+# make setup {} and test {} blocks that contain Soar source code
+# setting name to source.soar enables snippets, etc., and including
+# source.soar syntax enables highlighting.
+patterns:
+
+- comment: setup block run before each test block
+  name: source.soar
+  begin: (setup)\s+({)
+  end: (\})
+  beginCaptures:
+    '1': {name: support.function.soarunit}
+    '2': {name: keyword.operator.soarunit}
+  endCaptures:
+    '1': {name: keyword.operator.soarunit}
+  patterns:
+  - include: source.soar
+
+- comment: test block
+  name: source.soar
+  begin: (test)\s+(.+)\s+({)
+  beginCaptures:
+    '1': {name: support.function.soarunit}
+    '2': {name: string.unquoted.soarunit}
+    '3': {name: keyword.operator.soarunit}
+  end: (\})
+  endCaptures:
+    '1': {name: keyword.operator.soarunit}
+  patterns:
+  - include: source.soar
+
+- comment: end-of-line comments
+  name: comment.line.number-sign.soar
+  match: (;\s*)?\#.*$
+
+repository:
+  quoted-string:
+    begin: \"
+    end: \"
+    patterns:
+    - include: escaped-char
+  escaped-char:
+    name: constant.character.escape.soar
+    match: \\.

@@ -78,7 +78,7 @@
 			<key>comment</key>
 			<string>other functions</string>
 			<key>match</key>
-			<string>^(add-wme|alias|allocate|capture-input|cd|chunk-name-format|cli|clog|command-to-file|default-wme-depth|dirs|echo-commands|echo|edit-production|epmem|excise|explain-backtraces|firing-counts|gds-print|gp-max|help|indifferent-selection|init-soar|internal-symbols|learn|load-library|ls|matches|max-chunks|max-dc-time|max-elaborations|max-goal-depth|max-memory-usage|max-nil-output-cycles|memories|multi-attributes|numeric-indifferent-mode|o-support-mode|pbreak|popd|port|predict|preferences|print|production-find|pushd|pwatch|pwd|rand|remove-wme|replay-input|rete-net|rl|run|save-backtraces|select|set-library-location|set-stop-phase|smem|soarnews|source|srand|stats|stop-soar|svs|timers|time|unalias|verbose|version|waitsnc|warnings|watch-wmes|watch|wma) ([^{]*)</string>
+			<string>(add-wme|alias|allocate|capture-input|cd|chunk-name-format|cli|clog|command-to-file|default-wme-depth|dirs|echo-commands|echo|edit-production|epmem|excise|explain-backtraces|firing-counts|gds-print|gp-max|help|indifferent-selection|init-soar|internal-symbols|learn|load-library|ls|matches|max-chunks|max-dc-time|max-elaborations|max-goal-depth|max-memory-usage|max-nil-output-cycles|memories|multi-attributes|numeric-indifferent-mode|o-support-mode|pbreak|popd|port|predict|preferences|print|production-find|pushd|pwatch|pwd|rand|remove-wme|replay-input|rete-net|rl|run|save-backtraces|select|set-library-location|set-stop-phase|smem|soarnews|source|srand|stats|stop-soar|svs|timers|time|unalias|verbose|version|waitsnc|warnings|watch-wmes|watch|wma)\s+([^{]*)</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -97,7 +97,7 @@
 			<key>comment</key>
 			<string>default aliases</string>
 			<key>match</key>
-			<string>^(a|aw|chdir|ctf|set-default-depth|ex|eb|fc|gds_print|h|man|\?|inds|init|is|l|dir|pr|p|pc|wmes|varprint|topd|pw|step|d|e|rw|rn|sn|st|stop|ss|interrupt|un|w) ([^{]*)</string>
+			<string>(a|aw|chdir|ctf|set-default-depth|ex|eb|fc|gds_print|h|man|\?|inds|init|is|l|dir|pr|p|pc|wmes|varprint|topd|pw|step|d|e|rw|rn|sn|st|stop|ss|interrupt|un|w)\s+([^{]*)</string>
 		</dict>
 		<dict>
 			<key>include</key>

@@ -18,11 +18,11 @@ Many features, including ones requiring connection with a Soar agent, are TODO.
 
 ###Syntax Highlighting
 
-Files with the '.soar' exention are assumed to be Soar files and are highlighted accordingly. Code folding is also provided but is irregular at the moment.
+Soar syntax highlighting is applied to files with the '.soar' or '.soarunit' extensions. Code folding is also provided but is irregular at the moment.
 
 ###Snippets
 
-Snippets are currently provided for several Soar production types and several types of [SoarDoc](http://web.eecs.umich.edu/~soar/sitemaker/projects/soardoc/soardoc.html) documentation. SoarDoc snippets are triggered by `##!` and production snippets are triggered by `sp`. Provided snippets are:
+Several snippets are currently provided for various types of Soar productions, [SoarDoc](http://web.eecs.umich.edu/~soar/sitemaker/projects/soardoc/soardoc.html), and [SoarUnit](https://code.google.com/p/jsoar/wiki/SoarUnit) setup/test blocks. SoarDoc snippets are triggered by `##!` and production snippets are triggered by `sp`. Provided snippets are:
 
 * SoarDoc, triggered by `##!`, for:
     - documenting a file
@@ -32,4 +32,7 @@ Snippets are currently provided for several Soar production types and several ty
     - propose/compare/apply operator
     - elaborate state
     - elaborate substate
+* SoarUnit blocks:
+    - setup block
+    - test block
 

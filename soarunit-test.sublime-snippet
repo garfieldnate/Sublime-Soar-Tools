@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+test "${1:test name}" {
+
+  sp {propose*${2:op-name}
+    (state <s> ^name ${3:state-name}
+              -^result)
+  -->
+    (<s> ^operator <o>)
+    (<o> ^name ${2:op-name}
+         ^${4:arg xyz})
+  }
+
+  sp {pass
+    (state <s> ^name ${3:state-name}
+               ^result ${5:297})
+  -->
+    (pass)
+  }
+}
+]]></content>
+    <tabTrigger>test</tabTrigger>
+    <scope>source.soarunit</scope>
+    <description>SoarUnit test block</description>
+</snippet>

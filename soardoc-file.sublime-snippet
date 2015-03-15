@@ -10,6 +10,6 @@
 # @created ${4:$TM_FULLNAME} ${5:date}
 ]]></content>
     <tabTrigger>##!</tabTrigger>
-    <scope>source.soar</scope>
+    <scope>source.soar,source.soarunit</scope>
     <description>Soar file documentation</description>
 </snippet>

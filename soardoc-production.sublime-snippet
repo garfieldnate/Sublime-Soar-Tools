@@ -11,6 +11,6 @@
 # @created ${6:$TM_FULLNAME} ${7:date}
 ]]></content>
     <tabTrigger>##!</tabTrigger>
-    <scope>source.soar</scope>
+    <scope>source.soar,source.soarunit</scope>
     <description>Soar production documentation</description>
 </snippet>
