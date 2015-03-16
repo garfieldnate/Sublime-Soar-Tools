@@ -1,0 +1,23 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Soar Data Map
+scopeName: source.datamap
+fileTypes: [dm]
+uuid: e33f501f-e6f3-4160-9747-fe67880c8f3c
+
+patterns:
+- comment: type entries in the datamap
+  name: keyword.operator.datamap
+  match: ^(?:SOAR_ID|ENUMERATION|INTEGER_RANGE|FLOAT_RANGE|STRING)
+- comment: special Soar WME's
+  name: support.constant.datamap
+  match: \s+(?:input-link|output-link|state|superstate|io|operator|smem|epmem)(?:\s|$)
+- comment: nil
+  name: constant.language.datamap
+  match: \s+nil(\s|$)
+- comment: graph node numbers
+  name: constant.numeric.datamap
+  match: \d+
+- comment: attribute/value names
+  name: string.unquoted.datamap
+  match: '[A-Za-z]'

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>dm</string>
+	</array>
+	<key>name</key>
+	<string>Soar Data Map</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>type entries in the datamap</string>
+			<key>match</key>
+			<string>^(?:SOAR_ID|ENUMERATION|INTEGER_RANGE|FLOAT_RANGE|STRING)</string>
+			<key>name</key>
+			<string>keyword.operator.datamap</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>special Soar WME's</string>
+			<key>match</key>
+			<string>\s+(?:input-link|output-link|state|superstate|io|operator|smem|epmem)(?:\s|$)</string>
+			<key>name</key>
+			<string>support.constant.datamap</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>nil</string>
+			<key>match</key>
+			<string>\s+nil(\s|$)</string>
+			<key>name</key>
+			<string>constant.language.datamap</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>graph node numbers</string>
+			<key>match</key>
+			<string>\d+</string>
+			<key>name</key>
+			<string>constant.numeric.datamap</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>attribute/value names</string>
+			<key>match</key>
+			<string>[A-Za-z]</string>
+			<key>name</key>
+			<string>string.unquoted.datamap</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.datamap</string>
+	<key>uuid</key>
+	<string>e33f501f-e6f3-4160-9747-fe67880c8f3c</string>
+</dict>
+</plist>
