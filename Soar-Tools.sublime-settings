@@ -1,0 +1,25 @@
+{
+    // These are the default settings; edit the user preferences file
+    // to change them.
+
+    // If added to your system path, "soarunit" is fine; otherwise,
+    // you'll need to set this to "C:/jsoar-0.14.0/bin/soarunit", etc.
+    // in the user settings.
+    "soarunit_path": "soarunit",
+
+    // set to true if you want to use C Soar, not JSoar
+    "c_soar": false,
+
+    // If using C Soar, set this to the Soar distribution directory, or set
+    // the SOAR_HOME environment variable
+    // "SOAR_HOME": "C:/path/to/soar-9.x.x",
+
+    // set to true if you want a pretty popup window, instead of console
+    // output
+    "ui": false,
+
+    // indicate the size of thread pool to run tests in;
+    // either a number indicating the fixed size of a thread pool,
+    // "cpus" for number of cpus, or "cached" for cached
+    "threads": "cpus"
+}
