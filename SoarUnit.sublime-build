@@ -1,9 +1,6 @@
 {
-    "name": "Run SoarUnit on File",
     "target": "soarunit_one_file",
     "selector": "source.soarunit",
-    "working_dir": "${project_path:${folder:${file_path}}}"
-    "file_regex": "Test Case: [^\(]+(\(.+\))",
     "variants": [
         {
             "name": "Run SoarUnit on Project (slow)",

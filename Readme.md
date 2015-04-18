@@ -2,7 +2,7 @@
 Sublime Text Soar Tools
 ============
 
-Sublime Text package for [Soar](http://sitemaker.umich.edu/soar/home) development.
+Sublime Text package for [Soar](http://sitemaker.umich.edu/soar/home) development. Currently only tested for Sublime Text 3.
 
 Getting Started
 ===============
@@ -14,7 +14,34 @@ Getting Started
 Current Functionality
 =====================
 
-Many features, including ones requiring connection with a Soar agent, are TODO.
+###SoarUnit
+
+If you have [JSoar/SoarUnit](https://code.google.com/p/jsoar/wiki/SoarUnit) on your computer, you can run it with a build command (ctrl+b or command+b) when you have a SoarUnit file open. You will, however, need to specify the location of SoarUnit if it is not in your PATH. You may also wish to test using C Soar. To specify these settings, go to Preferences --> Package Settings --> Soar-Tools --> Settings - User. These are your available settings:
+
+    {
+        // If added to your system path, "soarunit" is fine; otherwise,
+        // you'll need to set this to "C:/jsoar-0.14.0/bin/soarunit", etc.
+        // in the user settings.
+        "soarunit_path": "soarunit",
+
+        // set to true if you want to use C Soar, not JSoar
+        "c_soar": false,
+
+        // If using C Soar, set this to the Soar distribution directory, or set
+        // the SOAR_HOME environment variable
+        // "SOAR_HOME": "C:/path/to/soar-9.x.x",
+
+        // set to true if you want a pretty popup window instead of console
+        // output
+        "ui": false,
+
+        // indicate the size of thread pool to run tests in;
+        // either a number indicating the fixed size of a thread pool,
+        // "cpus" for number of cpus, or "cached" for cached
+        "threads": "cpus"
+    }
+
+You can either run SoarUnit on the current file, or for the whole project, but the project option is currently slow and buggy, and therefore not recommended.
 
 ###Syntax Highlighting
 
