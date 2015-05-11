@@ -63,3 +63,18 @@ Several snippets are currently provided for various types of Soar productions, [
     - setup block
     - test block
 
+###SublimeREPL Integration
+You can run the Soar CLI from SublimeText if you have the [SublimeREPL](https://github.com/wuub/SublimeREPL) package installed. 
+
+* You may need to change the configuration so that SublimeREPL can find the CLI executable on your machine. This configuration is located in `path/to/packages/Sublime-Tools/Main.sublime-menu`. You need to change this line:
+
+    "cmd": ["%SOAR_HOME/bin/cli.exe"],
+
+The default value is a Windows-style path and also assumes that the `SOAR_HOME` variable is set on your machine. So if you are on Linux or do not have that environment variable set, you need to edit the path to point to the Soar cli on your machine.
+
+* Keep in mind that the Soar Tutorial distribution does not currently come with the CLI executable, so you need to the normal distribution to use SublimeREPL with Soar.
+
+###TODO
+
+* Make it work on ST2
+* Solicit feedback from Soar users

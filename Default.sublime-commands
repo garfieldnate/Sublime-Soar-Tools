@@ -1,0 +1,13 @@
+[
+    {
+        "caption": "SublimeREPL: Soar",
+        "command": "run_existing_window_command", "args":
+        {
+            /* Note that both these arguments are used to identify the file above and
+               load the REPL configuration from it
+             */
+            "id": "repl_soar",
+            "file": "../Soar-Tools/Main.sublime-menu"
+        }
+    }
+]

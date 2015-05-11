@@ -1,5 +1,31 @@
 [
     {
+        "id": "tools",
+        "children":
+        [{
+            "caption": "SublimeREPL",
+            "mnemonic": "r",
+            "id": "SublimeREPL",
+            "children":
+            [
+                {"command": "repl_open",
+                 "caption": "Soar",
+                 "id": "repl_soar",
+                 "mnemonic": "s",
+                 "args": {
+                    "type": "subprocess",
+                    "encoding": "utf8",
+                    "cmd": ["%SOAR_HOME/bin/cli.exe"],
+                    "cwd": "$file_path",
+                    "external_id": "soar",
+                    "syntax": "Packages/Soar-Tools/soar.tmLanguage"
+                    }
+                }
+            ]
+        }]
+    },
+
+    {
         "caption": "Preferences",
         "mnemonic": "n",
         "id": "preferences",
