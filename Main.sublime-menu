@@ -15,10 +15,12 @@
                  "args": {
                     "type": "subprocess",
                     "encoding": "utf8",
-                    "cmd": ["%SOAR_HOME/bin/cli.exe"],
+                    // TODO: environment variables don't work here...
+                    "cmd": ["%SOAR_HOME%/bin/cli.exe"],
                     "cwd": "$file_path",
                     "external_id": "soar",
-                    "syntax": "Packages/Soar-Tools/soar.tmLanguage"
+                    // note: why doesn't ${packages} work?
+                    "syntax": "Packages/Soar Tools/soar.tmLanguage"
                     }
                 }
             ]
@@ -38,17 +40,17 @@
                 "children":
                 [
                     {
-                        "caption": "Soar-Tools",
+                        "caption": "Soar Tools",
                         "children":
                         [
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/Soar-Tools/Soar-Tools.sublime-settings"},
+                                "args": {"file": "${packages}/Soar Tools/Soar-Tools.sublime-settings"},
                                 "caption": "Settings – Default"
                             },
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/User/Soar-Tools.sublime-settings"},
+                                "args": {"file": "${packages}/User/Soar Tools.sublime-settings"},
                                 "caption": "Settings – User"
                             },
                             { "caption": "-" }

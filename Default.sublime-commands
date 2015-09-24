@@ -7,7 +7,7 @@
                load the REPL configuration from it
              */
             "id": "repl_soar",
-            "file": "../Soar-Tools/Main.sublime-menu"
+            "file": "Packages/Soar Tools/Main.sublime-menu"
         }
     }
 ]

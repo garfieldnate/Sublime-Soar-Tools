@@ -16,7 +16,7 @@ Current Functionality
 
 ###SoarUnit
 
-If you have [JSoar/SoarUnit](https://code.google.com/p/jsoar/wiki/SoarUnit) on your computer, you can run it with a build command (ctrl+b or command+b) when you have a SoarUnit file open. You will, however, need to specify the location of SoarUnit if it is not in your PATH. You may also wish to test using C Soar. To specify these settings, go to Preferences --> Package Settings --> Soar-Tools --> Settings - User. These are your available settings:
+If you have [JSoar/SoarUnit](https://code.google.com/p/jsoar/wiki/SoarUnit) on your computer, you can run it with a build command (ctrl+b or command+b) when you have a SoarUnit file open. You will, however, need to specify the location of SoarUnit if it is not in your PATH. You may also wish to test using C Soar. To specify these settings, go to Preferences --> Package Settings --> Soar Tools --> Settings - User. These are your available settings:
 
     {
         // If added to your system path, "soarunit" is fine; otherwise,
