@@ -15,8 +15,8 @@
                  "args": {
                     "type": "subprocess",
                     "encoding": "utf8",
-                    // TODO: environment variables don't work here...
-                    "cmd": ["%SOAR_HOME%/bin/cli.exe"],
+                    // TODO: almost certainly there's another "cli" in the path...
+                    "cmd": ["cli"],
                     "cwd": "$file_path",
                     "external_id": "soar",
                     // note: why doesn't ${packages} work?
