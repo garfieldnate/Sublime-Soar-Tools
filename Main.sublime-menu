@@ -50,7 +50,7 @@
                             },
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/User/Soar Tools.sublime-settings"},
+                                "args": {"file": "${packages}/User/Soar-Tools.sublime-settings"},
                                 "caption": "Settings – User"
                             },
                             { "caption": "-" }
