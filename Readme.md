@@ -16,7 +16,7 @@ Current Functionality
 
 ###Syntax Highlighting
 
-Soar syntax highlighting is applied to files with the '.soar' or '.soarunit' extensions. Code folding is also provided but is irregular at the moment.
+Soar syntax highlighting is applied to files with the .soar, .soarunit, or .dm extensions. Code folding is also provided but is irregular at the moment.
 
 ###Snippets
 
