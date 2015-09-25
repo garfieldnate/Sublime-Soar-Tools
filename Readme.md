@@ -78,6 +78,5 @@ You can run the Soar CLI from SublimeText if you have the [SublimeREPL](https://
 
 ###TODO
 
-* Make it work on ST2
 * Highlighting for script blocks
 * Solicit feedback from Soar users
