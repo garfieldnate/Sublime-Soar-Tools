@@ -2,7 +2,7 @@
     <content><![CDATA[
 sp {${1:state-name}*propose*${2:op-name}
    (state <s> ^name ${1:state-name})
-}
+
 -->
    (<s> ^operator <op> + =)
    (<op> ^name ${2:op-name})
