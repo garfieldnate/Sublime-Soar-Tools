@@ -1,4 +1,3 @@
-============
 Sublime Text Soar Tools
 ============
 
@@ -14,11 +13,11 @@ Getting Started
 Current Functionality
 =====================
 
-###Syntax Highlighting
+### Syntax Highlighting
 
 Soar syntax highlighting is applied to files with the .soar, .soarunit, or .dm extensions. Code folding is also provided but is irregular at the moment.
 
-###Snippets
+### Snippets
 
 Several snippets are currently provided for various types of Soar productions, [SoarDoc](http://web.eecs.umich.edu/~soar/sitemaker/projects/soardoc/soardoc.html), and [SoarUnit](https://code.google.com/p/jsoar/wiki/SoarUnit) setup/test blocks. SoarDoc snippets are triggered by `##!` and production snippets are triggered by `sp`. Provided snippets are:
 
@@ -34,7 +33,7 @@ Several snippets are currently provided for various types of Soar productions, [
     - setup block
     - test block
 
-###SoarUnit
+### SoarUnit
 
 If you have [JSoar/SoarUnit](https://code.google.com/p/jsoar/wiki/SoarUnit) on your computer, you can run it with a build command (ctrl+b or command+b) when you have a SoarUnit file open. You will, however, need to specify the location of SoarUnit if it is not in your PATH. You may also wish to test using C Soar. To specify these settings, go to Preferences --> Package Settings --> Soar Tools --> Settings - User. These are your available settings:
 
@@ -62,7 +61,7 @@ If you have [JSoar/SoarUnit](https://code.google.com/p/jsoar/wiki/SoarUnit) on y
 
 You can either run SoarUnit on the current file, or for the whole project, but the project option is currently slow and buggy, and therefore not recommended.
 
-###SublimeREPL Integration
+### SublimeREPL Integration
 You can run the Soar CLI from SublimeText if you have the [SublimeREPL](https://github.com/wuub/SublimeREPL) package installed, but setup might be tricky:
 
 * If your Soar directory is not in your system path, you will need to add it to SublimeREPL's path:
@@ -76,7 +75,7 @@ You can run the Soar CLI from SublimeText if you have the [SublimeREPL](https://
 
 * Keep in mind that the Soar Tutorial distribution does not currently come with the CLI executable, so you need to download the normal distribution to use SublimeREPL with Soar.
 
-###TODO
+### TODO
 
 * Highlighting for script blocks
 * Solicit feedback from Soar users
