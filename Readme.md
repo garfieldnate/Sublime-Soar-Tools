@@ -62,6 +62,7 @@ If you have [JSoar/SoarUnit](https://code.google.com/p/jsoar/wiki/SoarUnit) on y
 You can either run SoarUnit on the current file, or for the whole project, but the project option is currently slow and buggy, and therefore not recommended.
 
 ### SublimeREPL Integration
+
 You can run the Soar CLI from SublimeText if you have the [SublimeREPL](https://github.com/wuub/SublimeREPL) package installed, but setup might be tricky:
 
 * If your Soar directory is not in your system path, you will need to add it to SublimeREPL's path:
@@ -71,9 +72,6 @@ You can run the Soar CLI from SublimeText if you have the [SublimeREPL](https://
         "default_extend_env": {"PATH": "C:/path/to/Soar/bin:{PATH}"}
     }
 
-* The name of the Soar CLI executable is simply "cli(.exe)", and you may have more than one of those on your computer. If that is the case, reorder the directories in your path variable or wait for [this issue](https://github.com/SoarGroup/Soar/issues/237) to be resolved.
-
-* Keep in mind that the Soar Tutorial distribution does not currently come with the CLI executable, so you need to download the normal distribution to use SublimeREPL with Soar.
 
 ### TODO
 

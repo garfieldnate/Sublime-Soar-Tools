@@ -15,8 +15,7 @@
                  "args": {
                     "type": "subprocess",
                     "encoding": "utf8",
-                    // TODO: almost certainly there's another "cli" in the path...
-                    "cmd": ["cli"],
+                    "cmd": ["soar"],
                     "cwd": "$file_path",
                     "external_id": "soar",
                     // note: why doesn't ${packages} work?
